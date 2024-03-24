@@ -98,3 +98,15 @@ body {
 #btn-login:focus ~ #login-form {
     display: block;
 }
+
+#titulo {
+    font-size: 8em;
+    text-align: center;
+    background-image: url(/images/vendas.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    padding: 0;
+    margin-top: 0px;
+}
