@@ -94,9 +94,12 @@ body {
 }
 
 /* Exibir o formulário correto ao clicar nos botões */
+/* #btn-cadastro:focus ~ #cadastro-form,
+#btn-login:focus ~ #login-form { 
+    display: block;*/
 #btn-cadastro:focus ~ #cadastro-form,
-#btn-login:focus ~ #login-form {
-    display: block;
+#btn-login:focus #login-form {
+    display: none;
 }
 
 #titulo {
