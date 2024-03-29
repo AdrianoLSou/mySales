@@ -1,0 +1,84 @@
+/* styles.css */
+header {
+    background-image: linear-gradient(180deg, #bce5ff 0, #9db9f2 50%, #7e8fb3 100%);
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 15px 15px 15px 15px gray;
+  }
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 50px;
+    background: url(logo.svg) no-repeat center;
+    display: block;
+}
+
+nav {
+    float: right;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-icon {
+    background: url(menu-icon.png) no-repeat center;
+    display: none; /* Esconde o ícone do menu inicialmente */
+    width: 32px;
+    height: 32px;
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        position: absolute;
+    }
+
+    #menu-icon {
+        display: inline-block; /* Mostra o ícone do menu em telas menores */
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #c5c5c5;
+        right: 10px;
+        top: 65px;
+        width: 35%;
+    }
+
+    nav:hover ul {
+        display: block; /* Exibe a lista ao passar o mouse no menu */
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        margin: 0;
+    }
+}
