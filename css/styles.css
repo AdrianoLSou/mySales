@@ -94,13 +94,14 @@ body {
 }
 
 /* Exibir o formulário correto ao clicar nos botões */
-/* #btn-cadastro:focus ~ #cadastro-form,
+ #btn-cadastro:focus ~ #cadastro-form,
 #btn-login:focus ~ #login-form { 
-    display: block;*/
-#btn-cadastro:focus ~ #cadastro-form,
-#btn-login:focus #login-form {
-    display: none;
+    display: block;
 }
+/* #btn-cadastro:focus ~ #cadastro-form, */
+/* #btn-login:focus #login-form {
+    display: none;
+} */
 
 #titulo {
     font-size: 8em;
